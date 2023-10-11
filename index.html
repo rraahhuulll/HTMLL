@@ -1,0 +1,199 @@
+<!-- html = hyper text markup language -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML1</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid red;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- tags = tags tells browser how to render different elements 
+    <p> - paragraph tag ,< h1-h6 > - heading tags , <img> image tag -->
+
+    <!-- text elements = 2 types - 1 block elements ->  which have both opening and closing tag , example => heading tag , paragraph tag , etc,, and 2 inline elements -> which have only opening tag , example => a - anchor tag , strong , em etc  -->
+    <!-- lists => 3 types of list  -->
+    <!-- 1 Order list -->
+    <ol>
+      <li>apple</li>
+      <li>mango</li>
+      <li>Lichi</li>
+    </ol>
+    <!-- 2 unordered list -->
+    <ul>
+      <li>yesterday</li>
+      <li>today</li>
+      <li>Tommorrow</li>
+    </ul>
+    <!-- description list -->
+    <dl>
+      <pre><dt>  FMCG FOODS</dt></pre>
+      <!-- pre tag is used for render message in the browser in the same way it is written in the code -->
+      <dd>aata</dd>
+      <dd>rice</dd>
+      <dd>pulses</dd>
+    </dl>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52qqyY2Mosgxt-Pt00pZy4TqIhCanFTwyLwC-D0z5&s"
+      alt="image of captured view"
+    />
+    <pre><del>hello </del> Hii</pre>
+    <mark>highlighted body</mark>
+    <!-- for superscript text sup tag is used -->
+    <p>x <sup>2</sup></p>
+    <!-- for subscript text sub tag is used  -->
+    X<sub>2</sub>
+
+    <!-- q tag is used for making texts in quotes example : " hii how re you" -->
+    <p>she said : <q>how are you ?</q></p>
+    <h3>Use of Abbr tag</h3>
+    <p>
+      The <abbr title="World Health Organization">WHO</abbr> was founded in
+      1948.
+    </p>
+    <h3>Address</h3>
+    <address>
+      Written by John Doe.<br />
+      Visit us at:<br />
+      Example.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+    <h3>use of blockquote and cite tag</h3>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 60 years, WWF has worked to help people and nature thrive. As the
+      world's leading conservation organization, WWF works in nearly 100
+      countries. At every level, we collaborate with people around the world to
+      develop and deliver innovative solutions that protect communities,
+      wildlife, and the places in which they live.
+    </blockquote>
+
+    <!-- 10oct  -->
+    <!-- TAbles -->
+    <!-- to make table we use table tag -->
+    <!-- to make row in table we use tr tag=> table row -->
+    <!-- to make column in table we use td tag-> table data  -->
+    <table>
+      <caption style="caption-side: bottom">
+        made by rahul singh
+      </caption>
+      <thead>
+        <tr>
+          <th>student_name</th>
+          <th>student_rno</th>
+          <th>student_percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rahul</td>
+          <td>2341</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>ayush</td>
+          <td>9879</td>
+          <td>78</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>generated my vips school</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- rowspan colspan rowgroup colgroup caption -->
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Month</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>jan</th>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <th>feb</th>
+          <td>2000</td>
+        </tr>
+
+        <tr>
+          <th>march</th>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <th>april</th>
+          <td>3000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>total</th>
+          <td>7000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- login form  -->
+    <label for="firstName">first name:</label>
+    <input type="text" name="firstName" /> <br />
+    <label for="lastName">last name:</label>
+    <input type="text" name="lastName" />
+
+    <h1>welcome to code help</h1>
+    <table>
+      <tr>
+        <td>
+          <label for="firstName">first name:</label>
+        </td>
+        <td><input type="text" name="firstName" /> <br /></td>
+      </tr>
+      <tr>
+        <td><label for="lastName">last name:</label></td>
+        <td><input type="text" name="lastName" /></td>
+      </tr>
+    </table>
+    <button>Submit</button>
+    <input type="radio" />
+    <input type="checkbox" name="" id="" />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h1>welcome to my website</h1>
+    <form action="https://www.google.com">
+      <label for="firstName">first Name :</label>
+      <input type="text" name="firstName" /> <br />
+      <label for="lastName">last Name :</label>
+      <input type="text" name="lastName" />
+      <input type="submit" value="submit" />
+      <label for="rating">rating</label>
+      <input type="radio" name="rating" />
+      <input type="radio" name="rating" />
+      <input type="radio" name="rating" />
+      <label for="cars">Select a Car</label>
+      <select name="cars" id="cars">
+        <option value="volvo">volvo</option>
+        <option value="farari">farari</option>
+        <option value="lamborgini">lamborgini</option>
+        <option value="bmw">bmw</option>
+      </select>
+      <label for="contact_number">contact:</label>
+      <input type="number" id="contact_number" name="contact_number" />
+      <label for="birthday_date">birth day : </label>
+      <input type="date" id="birthday_date" name="birthday_date" />
+    </form>
+  </body>
+</html>
