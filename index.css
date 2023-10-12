@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* css = cascading style sheet ,  used for appearance , styling , formating*/
+
+/* simple selector => element selector , class selector , id selector 
+example 
+a{
+    color : red;
+    color = property , and red = value and a = selector
+}
+*/
+
+* {
+  /* universal selector */
+  background-color: rgb(176, 150, 150);
+}
+
+p {
+  color: red;
+}
+h1 {
+  background-color: aqua;
+}
+.yellow {
+  color: yellow;
+}
+.red {
+  color: red;
+}
+h1,
+h2,
+h3 {
+  font-size: small;
+}
+h4,
+h5,
+h6 {
+  font-size: large;
+}
+
+#button1 {
+  color: red;
+}
+
+#hover:hover {
+  background-color: pink;
+  /* pseudo tag */
+}
+.nested_selector {
+  background-color: yellow;
+}
+.nested_selector p {
+  color: brown;
+  background-color: pink;
+}
+
+/* hexadecimal colors
+    starting from 0-F 
+    00 - FF 
+    example its is combine of 3 colors RGB for R - 2 value 00 or 1F etc same with g and b
+    so color : #ffffff the more number in the individual R G or B  make the more probability of the shade color 
+    like if R is FF then there is most chance that the color is red or shade of red color
+    blue color = #0000ff
+    green color = #00ff00
+    red color = #ff0000
+    black color = #000000
+    and white color = #ffffff
+
+*/
+/* RGB colors => 
+rgb(255,0,0) red
+rgb(0,255,0) green
+rgb(0,0,255) blue
+rgb(0,0,0) black
+rgb(255,255,255) white
+
+ */
+/* pre-defined / cross-browser colors name 
+140 colors are presents
+red , green , white , black , blue
+ */
+
+.box {
+  width: 200px;
+  height: 100px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  padding: 87px;
+  margin-top: 10px;
+}
+#box1 {
+  background-color: rgb(228, 119, 29);
+}
+#box2 {
+  background-color: rgb(231, 231, 231);
+}
+#box3 {
+  background-color: rgb(40, 255, 21);
+}
+
+.gra {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  margin: 10px;
+}
+#gra1 {
+  background: linear-gradient(red, blue);
+}
+
+#gra2 {
+  background: linear-gradient(to right, red, blue);
+}
+
+#gra3 {
+  background: linear-gradient(to right top, red, blue);
+}
+.rad {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+#rad1 {
+  background: radial-gradient(circle, red, white, blue);
+}
+#rad2 {
+  background: radial-gradient(red, blue, green, white);
+}
+#rad3 {
+  background: conic-gradient(
+    red,
+    blue,
+    green,
+    pink,
+    yellow,
+    white,
+    grey,
+    purple,
+    aqua
+  );
+}
+
+.shadow {
+  text-shadow: 3px 3px 3px red;
+}
+.shadow {
+  text-shadow: 3px 3px 3px red, 5px 5px 5px yellow;
+}
+.shadow1 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px red;
+  margin: 10px;
+}
+.shadow2 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px red;
+  box-shadow: -10px -10px 10px yellow, 10px 10px 10px red;
+  margin: 30px;
+}
+
+/* 1px in css = 1/96 inch */
+/* 1% = 1 % of it parents  */
+/* 1em means = 1 * parents font size  */
+/* 1rem = 1* root font size */
+/* 1vh and 1vw means = how much screen to v cover , example 100vw = width will be equal to the screen size and 1vw = with will be 1 % of screen size */
+.maxheight {
+  max-height: 200px;
+  width: 30vw;
+  border: 2px solid red;
+  overflow: scroll;
+}
+.min {
+  margin-top: 30px;
+  border: 2px solid black;
+  width: 30vw;
+  min-height: 100px;
+  /* min height says agr hamre content minimun height m to kuch nahi hoga pr agr content minimum height s badega to div ki height v automatic baad jayegi */
+}
+/* same is min-width and max-width */
+
+.box {
+  display: inline-block;
+}
+#boxs2 {
+  position: absolute;
+  /* left: 10px; */
+  right: 100px;
+}
+#boxs3 {
+  position: relative;
+  /* top: 100px; */
+  /* left: 20px; */
+}
+/* #box4 {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  position: fixed;
+} */
+#boxs4 {
+  position: fixed; /* this will stick at the page from anywhere but sticky will stick from its place */
+  /* position: sticky; */
+  top: 10px;
+  background-color: #fff;
+}
+.pos {
+  width: 100vw;
+  height: 2000px;
+  border: 2px solid red;
+}
+/* #b1 {
+  position: relative;
+  top: 100px;
+  background-color: yellow;
+} */
+#b2 {
+  position: absolute;
+
+  background-color: #fff;
+}
+/* 
+.hw {
+  border: 2px solid black;
+  width: 500px;
+  height: 500px;
+  display: flex;
+} */
+/* 
+#hw3 {
+   position: absolute; 
+  justify-content: center;
+  align-items: center;
+}  */
+/* 
+#hw1 {
+position: absolute; 
+  justify-items: center;
+  align-items: center;
+} */
+/* #hw2 {
+   position: absolute; 
+   top: 400px; 
+} 
+*/
