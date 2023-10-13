@@ -1,0 +1,30 @@
+/* .box {
+  background-color: aqua;
+  margin: 200px;
+    transform: rotate(-45deg); 
+}
+.box:hover {
+  background-color: aqua;
+  transform: translate(100px, 200px);
+  transform: scale(2);
+  transform: skew(-45deg);
+} */
+
+div {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  margin: 10px;
+  border: 2px solid black;
+}
+.static {
+  transform: perspective(15px) rotatez(45deg);
+}
+
+.translated {
+  transform: perspective(100px) translateZ(100deg);
+}
+
+.scaled {
+  transform: perspective(10px) scaleZ(100px) rotate(45deg);
+}
