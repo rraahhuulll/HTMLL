@@ -1,10 +1,76 @@
 .container {
   border: 2px solid green;
-  width: 400px;
+  /* width: 400px; */
   height: 400px;
   display: flex;
+  flex-direction: row-reverse;
+
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap-reverse;
+  flex-flow: row-reverse wrap;
+  flex-flow: row-reverse 
+  wrap-reverse;
+  flex-flow: row wrap; */
+  /* flex-flow: column wrap-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* justify-content will make changes in horizontal direction */
+  /* justify-content: flex-start; */
+  /* this will put the box at the starting */
+  /* justify-content: flex-end; */
+  /* this will put the box at the end of the container */
+  /* justify-content: space-around; */
+  /* this will make equal space between the box but not at the starting and at the end of the boxes */
+  /* justify-content: space-evenly; */
+  /* this provide equal space between the box as well as at the starting and end of the box */
+  /* justify-content: space-between; */
+  /* this will provide equal space only between the box and there will be no space at the starting and end of the box */
+  /* align-items will makes changes in vertical direction
+   */
+  /* align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  align-items: baseline; */
+  /* the content will be in same line */
+  /* justify-content: center;
+  align-items: center; */
+  /* gap: 10px; */
+  /* flex-wrap: wrap;
+  justify-content: flex-end;
+  justify-content: flex-start;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly; */
+  justify-content: center;
+  align-items: center;
+
+  align-content: flex-start;
 }
 
 .box {
   border: 2px solid brown;
+  /* height: 40px; */
+  /* width: 50px; */
+  flex-basis: 50px;
+  /* flex basis is use to give the width to the box , the width and flex basis are same , the only difference between them are when content size is increase / overflow, in the width the  overflow content is hidden but in flex basis the width of the box is increase and full content is visible */
+}
+#box1 {
+  order: 1;
+  align-self: stretch;
+  /* flex-grow: 1; */
+}
+#box2 {
+  /* flex-grow: 1; */
+  align-self: flex-end;
+}
+#box3 {
+  /* flex-shrink: 3; */
+  align-self: flex-start;
+  /* flex-grow: 3; */
 }
